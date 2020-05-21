@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hello World</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script type="text/javascript" src="jquery.js"></script>
+	<script type="text/javascript">
+		function open_curtain()
+		 {
+			$("#curtain1").animate({width:20},1000);
+			$("#curtain2").animate({width:20},1000);
+		}
+		function close_curtain()
+		{
+			$("#curtain1").animate({width:200},1000);
+			$("#curtain2").animate({width:191},1000);
+		}
+	</script>
+</head>
+<body>
+	<div id="wrapper">
+		<div id="effect">
+			<p>surprise you got a lottery!</p>
+			<img src="img/curtain1.jpg" id="curtain1">
+			<img src="img/curtain2.jpg" id="curtain2">
+		</div>
+		<div id="curtain_buttons">
+			<input type="button" value="Open curtain" onclick="open_curtain();" >
+			<input type="button" value="Close curtain" onclick="close_curtain();" >			
+		</div>
+	</div>
+</body>
+</html>
